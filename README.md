@@ -112,6 +112,8 @@ You can also load data from JSON/YAML and spread it into `thesis-info`.
 - `highlight-comment(..., highlight-body: ...)[...]`: Highlights text and attaches a comment.
 - `listofnotes`: List of review notes.
 
-## License
+## Licence
 
-MIT.
+MIT licensed
+
+Copyright © 2026 Mathieu AUCEJO (maucejo)
