@@ -5,6 +5,10 @@
 #let note-counter = counter("note-counter")
 #let note-img = state("note-img", ())
 #let note-content = state("note-content", ())
+#let review-note = counter("review-note")
+#let review-comment = counter("review-comment")
+#let review-question = counter("review-question")
+#let review-todo = counter("review-todo")
 
 #let cnam-fonts = (
     body: ("TeXGyrePagellaX", "Libertinus Serif", "New Computer Modern"),
@@ -108,6 +112,16 @@
   // Update the note counter
   note-counter.step()
 
+  if type.contains("note") {
+    review-note.step()
+  } else if type.contains("comment") {
+    review-comment.step()
+  } else if type.contains("question") {
+    review-question.step()
+  } else if type.contains("todo") {
+    review-todo.step()
+  }
+
   // Creation of the note content
   let note-cnt = text(fill: color)[*#note-counter.display()*]
   let note-text = [#text(fill: color)[*#note-cnt #by :*] #body]
@@ -184,4 +198,23 @@
     row-gutter: 1em,
     ..notes
   )
+
+  let summary = if cnam-lang.get() == "fr" {
+    "Résumé des commentaires de relecture"
+  } else {
+    "Summary of review comments"
+  }
+
+  v(2em)
+  align(center, summary + grid(
+    columns: 2,
+    column-gutter: 1em,
+    inset: 0.5em,
+    grid.hline(stroke: 0.75pt),
+    [Note], [#review-note.final().first()],
+    [Comment], [#review-comment.final().first()],
+    [Question], [#review-question.final().first()],
+    [Todo], [#review-todo.final().first()],
+    grid.hline(stroke: 0.75pt)
+  ))
 }
