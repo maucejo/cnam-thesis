@@ -59,7 +59,6 @@ This is a warning box.
 #v(1em)
 #example-box(numbering: false, vspace: -1em)[
 ```typ
-#import "bookly-themes.typ": *
 #important-box[This is an important box.]
 ```
 ][
