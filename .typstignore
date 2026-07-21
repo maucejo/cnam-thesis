@@ -12,3 +12,4 @@
 scripts
 justfile
 docs
+template_dev

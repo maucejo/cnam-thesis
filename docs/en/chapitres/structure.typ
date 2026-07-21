@@ -1,4 +1,4 @@
-#import "@preview/cnam-thesis:0.1.0": *
+#import "@preview/community-cnam-thesis:0.1.0": *
 #import "../../guide-utils.typ": *
 
 = Document Formatting <ch:structure>
@@ -11,7 +11,7 @@ This chapter presents the basic elements for formatting a Typst document. We wil
 
 == Title Hierarchy <s:structure-titles>
 
-The `cnam-thesis` template supports different levels of titles.
+The `community-cnam-thesis` template supports different levels of titles.
 
 #code-box[
 ```typst
@@ -32,7 +32,7 @@ The `cnam-thesis` template supports different levels of titles.
 By default, chapters are numbered. If you want to create unnumbered chapters (abstract, acknowledgments, introduction, etc.), you can use the following command at the beginning of the corresponding file. For example, for the introduction chapter:
 
 #code-box[```typst
-#import "@preview/cnam-thesis:0.1.0": *
+#import "@preview/community-cnam-thesis:0.1.0": *
 
 #show: chapter-nonum
 
@@ -190,7 +190,7 @@ Parts are sections at a level higher than chapters. They allow you to group mult
 ```
 ]
 
-Regarding page layout environments, `cnam-thesis` relies on the `bookly` template to structure the document. It is possible to use the #cmd-("front-matter"), #cmd-("main-matter"), and #cmd-("appendix") environments to structure the document in three parts: the front matter, the main content, and the appendices.
+Regarding page layout environments, `community-cnam-thesis` relies on the `bookly` template to structure the document. It is possible to use the #cmd-("front-matter"), #cmd-("main-matter"), and #cmd-("appendix") environments to structure the document in three parts: the front matter, the main content, and the appendices.
 
 To activate these environments, use the following commands at the desired location in the document:
 #code-box[```typst

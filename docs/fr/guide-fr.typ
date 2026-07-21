@@ -1,4 +1,4 @@
-#import "@preview/cnam-thesis:0.1.0": *
+#import "@preview/community-cnam-thesis:0.1.0": *
 
 #let supervisor = (
   (name: "Henri Grégoire", title: "Abbé constitutionnelle", institution: "Cnam, Paris"),
@@ -19,7 +19,7 @@
   (name: "Henri Tresca", position: "Professeur titulaire de la Chaire de Mécanique, Conservatoire national des arts et métiers, Paris, France", role: "Co-directeur de thèse"),
 )
 
-#show: cnam-thesis.with(
+#show: community-cnam-thesis.with(
     title: [Guide d'utilisation du gabarit \ Typst pour les thèses du Cnam],
     author: "Mathieu Aucejo",
     thesis-info: (

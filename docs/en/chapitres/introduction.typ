@@ -1,4 +1,4 @@
-#import "@preview/cnam-thesis:0.1.0": *
+#import "@preview/community-cnam-thesis:0.1.0": *
 #import "@preview/swank-tex:0.1.0": LaTeX
 
 #show: chapter-nonum
@@ -17,7 +17,7 @@ For more information about Typst, see the #link("https://typst.app/docs/", "offi
 
 This guide is organized into seven thematic chapters:
 
-+ *General usage* -- General instructions for using the `cnam-thesis` template.
++ *General usage* -- General instructions for using the `community-cnam-thesis` template.
 
 + *Document formatting* -- Heading hierarchy, numbering, cross-references, lists, etc.
 
@@ -126,12 +126,12 @@ Import packages with:
 ```
 ]
 
-For `cnam-thesis`:
+For `community-cnam-thesis`:
 #code-box[
 ```typst
-#import "@preview/cnam-thesis:0.1.0": *
-#import "@preview/cnam-thesis:0.1.0": ct
-#import "@preview/cnam-thesis:0.1.0": info-box, warning-box
+#import "@preview/community-cnam-thesis:0.1.0": *
+#import "@preview/community-cnam-thesis:0.1.0": ct
+#import "@preview/community-cnam-thesis:0.1.0": info-box, warning-box
 ```
 ]
 

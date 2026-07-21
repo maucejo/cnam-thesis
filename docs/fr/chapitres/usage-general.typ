@@ -1,11 +1,11 @@
-#import "@preview/cnam-thesis:0.1.0": *
+#import "@preview/community-cnam-thesis:0.1.0": *
 #import "@preview/mantys:1.0.2": *
 #import "@preview/dtree:0.1.1": dtree
 #import "../../guide-utils.typ": *
 
 = Usage général <ch:usage-general>
 
-Ce chapitre présente les instructions générales pour l'utilisation du gabarit `cnam-thesis`. Il est recommandé de suivre ces instructions avant de commencer la rédaction de votre manuscrit.
+Ce chapitre présente les instructions générales pour l'utilisation du gabarit `community-cnam-thesis`. Il est recommandé de suivre ces instructions avant de commencer la rédaction de votre manuscrit.
 
 #minitoc
 
@@ -13,13 +13,13 @@ Ce chapitre présente les instructions générales pour l'utilisation du gabarit
 
 == Informations générales
 
-Le gabarit `cnam-thesis` est basé sur `bookly`, qui est paquet Typst développé par l'auteur de ce document. Il fournit une structure de document cohérente, des styles de mise en page prédéfinis et des fonctionnalités spécifiques aux documents académiques.
+Le gabarit `community-cnam-thesis` est basé sur `bookly`, qui est paquet Typst développé par l'auteur de ce document. Il fournit une structure de document cohérente, des styles de mise en page prédéfinis et des fonctionnalités spécifiques aux documents académiques.
 
 Le présent gabarit personnalise le gabarit `bookly` pour répondre aux besoins spécifiques des thèses du Conservatoire national des arts et métiers (Cnam). Il inclut d'autres fonctionnalités qui seront détaillées dans les chapitres suivants.
 
 === Polices de caractères
 
-Pour utiliser le gabarit `cnam-thesis`, il est nécessaire d'installer les polices de caractères suivantes sur votre système :
+Pour utiliser le gabarit `community-cnam-thesis`, il est nécessaire d'installer les polices de caractères suivantes sur votre système :
 
 - Texte : `TeXGyrePagellaX` (#link("https://www.ctan.org/tex-archive/fonts/newpx/", "lien de téléchargement")), `Libertinus Serif` (#link("https://ctan.org/pkg/libertinus-fonts?lang=en", "lien de téléchargement")) et `New Computer Modern` (inclus avec Typst).
 
@@ -29,7 +29,7 @@ Pour utiliser le gabarit `cnam-thesis`, il est nécessaire d'installer les polic
 
 === Couleurs du thème
 
-Le gabarit `cnam-thesis` définit deux couleurs principales pour assurer une cohérence visuelle dans l'ensemble du document :
+Le gabarit `community-cnam-thesis` définit deux couleurs principales pour assurer une cohérence visuelle dans l'ensemble du document :
 
 - Couleur primaire #box(width: 1em, height: 1em, fill: cnam-colors.primary)
 - Couleur secondaire : #box(width: 1em, height: 1em, fill: cnam-colors.secondary)
@@ -41,15 +41,15 @@ Le gabarit `cnam-thesis` définit deux couleurs principales pour assurer une coh
 Pour utiliser le modèle, il faut l'importer dans votre fichier principal `typ`. En supposant que le template et le fichier principal sont dans le même dossier, il suffit d'insérer la commande suivante à la première ligne du fichier principal.
 
 #code-box[```typ
-#import "@preview/cnam-thesis:0.1.0": *
+#import "@preview/community-cnam-thesis:0.1.0": *
 ```]
 
 #info-box[Si vous décomposez votre document en différents fichiers, il faut insérer la commande précédente en préambule de chaque fichier.]
 
-Après avoir importé le modèle, celui doit être initialisé en appliquant une règle d'affichage (`show` rule) avec la commande #cmd("cnam-thesis") en passant les options nécessaires avec l'instruction `with` dans votre fichier principal `typ` :
+Après avoir importé le modèle, celui doit être initialisé en appliquant une règle d'affichage (`show` rule) avec la commande #cmd("community-cnam-thesis") en passant les options nécessaires avec l'instruction `with` dans votre fichier principal `typ` :
 
 #code-box[```typ
-#show: cnam-thesis.with(
+#show: community-cnam-thesis.with(
     title: "titre de la thèse",
     author: "Nom de l'auteur",
     lang: "fr",
@@ -68,7 +68,7 @@ Cette fonction d'initialisation contient un certain nombre d'arguments qui sont 
 #argument("lang", default: ["fr"], type: mtype("string"))[
   Langue du document.
 
-  #text(size: 0.85em, info-box[Toutes les langues supportées par `bookly` sont supportées par le gabarit `cnam-thesis`.])
+  #text(size: 0.85em, info-box[Toutes les langues supportées par `bookly` sont supportées par le gabarit `community-cnam-thesis`.])
 ]
 #argument("open-right", default: [true], type: mtype("bool"))[
   Si `true`, les chapitres s'ouvrent sur une page de droite. Si `false`, les chapitres s'ouvrent sur la page suivante.
@@ -134,7 +134,7 @@ Pour définir les dictionnaires `supervisor`, `co-supervisor` et `committee`, pl
   (name: "Henri Tresca", title: "Professeur titulaire de la Chaire de Mécanique", institution: "Cnam, Paris"),
 )
 
-#show: cnam-thesis.with(
+#show: community-cnam-thesis.with(
     thesis-info: (
         supervisor: supervisor,
     ),
@@ -165,7 +165,7 @@ Pour définir les dictionnaires `supervisor`, `co-supervisor` et `committee`, pl
 #v(1em)
 ```typ
 // main.typ
-#show: cnam-thesis.with(
+#show: community-cnam-thesis.with(
     thesis-info: json("/chemin/vers/thesis-info.json"),
 )
 ```
@@ -187,7 +187,7 @@ supervisor:
 #v(1em)
 ```typ
 // main.typ
-#show: cnam-thesis.with(
+#show: community-cnam-thesis.with(
     thesis-info: yaml("/chemin/vers/thesis-info.yaml"),
 )
 ```
@@ -224,13 +224,13 @@ main.typ
 #code-box[
 ```typ
 // main.typ
-#import "@preview/cnam-thesis:0.1.0": *
+#import "@preview/community-cnam-thesis:0.1.0": *
 
 #let supervisor = ...
 #let co-supervisor = ...
 #let committee = ...
 
-#show: cnam-thesis.with(
+#show: community-cnam-thesis.with(
    title: [Guide d'utilisation du template \ Typst pour les thèses du Cnam],
     author: "Mathieu Aucejo",
     thesis-info: (

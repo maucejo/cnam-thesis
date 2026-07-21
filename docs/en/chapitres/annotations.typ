@@ -1,9 +1,9 @@
-#import "@preview/cnam-thesis:0.1.0": *
+#import "@preview/community-cnam-thesis:0.1.0": *
 #import "../../guide-utils.typ": *
 
 = Review comments <ch:review>
 
-This section presents the different review and annotation features available in the `cnam-thesis` template. These features allow authors and reviewers to collaborate efficiently by adding comments, margin notes, and annotations directly in the document.
+This section presents the different review and annotation features available in the `community-cnam-thesis` template. These features allow authors and reviewers to collaborate efficiently by adding comments, margin notes, and annotations directly in the document.
 
 #minitoc
 
@@ -30,7 +30,7 @@ Enabling comments creates a margin area on the right side of the document, where
 
 == Comment types <ch:review->
 
-The `cnam-thesis` template provides different comment types, each with a specific icon to distinguish them visually:
+The `community-cnam-thesis` template provides different comment types, each with a specific icon to distinguish them visually:
 
 - *`note`* #box(image("../../../src/resources/logo/note.svg", width: 1em) + v(-1pt)) : Used to add informational notes or additional explanations.
 
@@ -112,7 +112,7 @@ In the next section, #ma-highlight-comment(type: "question", dy: - 3.5em)[we wil
 
 == Table of annotations
 
-To make reading and navigating comments easier, the `cnam-thesis` template also provides an annotation table. This table lists all comments added to the document, with their number, author, and type. To insert it in the document, simply use the #cmd-("listofnotes") command at the desired location.
+To make reading and navigating comments easier, the `community-cnam-thesis` template also provides an annotation table. This table lists all comments added to the document, with their number, author, and type. To insert it in the document, simply use the #cmd-("listofnotes") command at the desired location.
 
 #code-box[
 ```typ

@@ -1,4 +1,4 @@
-#import "@preview/cnam-thesis:0.1.0": *
+#import "@preview/community-cnam-thesis:0.1.0": *
 #import "../../guide-utils.typ": *
 
 = Mise en forme du document <ch:structure>
@@ -11,7 +11,7 @@ Ce chapitre présente les éléments de base permettant de mettre en forme un do
 
 == Hiérarchisation des titres <s:structure-titles>
 
-Le template `cnam-thesis` supporte différents niveaux de titres.
+Le template `community-cnam-thesis` supporte différents niveaux de titres.
 
 #code-box[
 ```typst
@@ -32,7 +32,7 @@ Le template `cnam-thesis` supporte différents niveaux de titres.
 Par défaut, les chapitres sont numérotés. Si vous souhaitez créer des chapitres non numérotés (résumé, remerciements, introduction, etc.), vous pouvez utiliser la commande suivante en préambule du fichier correspondant. Par exemple, pour le chapitre d'introduction:
 
 #code-box[```typst
-#import "@preview/cnam-thesis:0.1.0": *
+#import "@preview/community-cnam-thesis:0.1.0": *
 
 #show: chapter-nonum
 
@@ -188,7 +188,7 @@ Les parties sont des sections de niveau supérieur aux chapitres. Elles permette
 ```
 ]
 
-Concernant les environnements de mise en page, `cnam-thesis` s'appuie sur le template `bookly` pour structurer le document. Il est possible d'utiliser les environnements #cmd-("front-matter"), #cmd-("main-matter") et #cmd-("appendix") pour structurer le document en trois parties : la partie avant-propos, la partie principale et la partie annexes.
+Concernant les environnements de mise en page, `community-cnam-thesis` s'appuie sur le template `bookly` pour structurer le document. Il est possible d'utiliser les environnements #cmd-("front-matter"), #cmd-("main-matter") et #cmd-("appendix") pour structurer le document en trois parties : la partie avant-propos, la partie principale et la partie annexes.
 
 Pour activer ces environnements, il faut utiliser les commandes suivantes à l'endroit souhaité dans le document :
 #code-box[```typst

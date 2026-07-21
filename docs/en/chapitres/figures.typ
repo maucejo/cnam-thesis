@@ -1,4 +1,4 @@
-#import "@preview/cnam-thesis:0.1.0": *
+#import "@preview/community-cnam-thesis:0.1.0": *
 #import "../../guide-utils.typ": *
 #import "@preview/lilaq:0.6.0" as lq
 
@@ -159,7 +159,7 @@ Table @tab:perimetres presents the formulas used to calculate the perimeters of 
 
 == Long and short captions for figures and tables
 
-The `cnam-thesis` template lets you define a long caption and a short caption for figures and tables via the #cmd("ls-caption") function. The long caption is used in the figure or table caption, while the short caption is used in the list of figures or tables.
+The `community-cnam-thesis` template lets you define a long caption and a short caption for figures and tables via the #cmd("ls-caption") function. The long caption is used in the figure or table caption, while the short caption is used in the list of figures or tables.
 
 #v(1.5em)
 #example-box(numbering: false,vspace: -1.5em)[

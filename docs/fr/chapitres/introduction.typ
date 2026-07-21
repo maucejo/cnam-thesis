@@ -1,4 +1,4 @@
-#import "@preview/cnam-thesis:0.1.0": *
+#import "@preview/community-cnam-thesis:0.1.0": *
 #import "@preview/swank-tex:0.1.0": LaTeX
 
 #show: chapter-nonum
@@ -17,7 +17,7 @@ Pour plus d'information sur Typst, vous pouvez consulter le #link("https://typst
 
 Ce guide est organisé en sept chapitres thématiques :
 
-+ *Usage général* -- Instruction générales pour l'utilisation du gabarit `cnam-thesis`.
++ *Usage général* -- Instruction générales pour l'utilisation du gabarit `community-cnam-thesis`.
 
 + *Mise en forme* -- Hiérarchie des titres, numérotation, références croisées, listes, etc.
 
@@ -167,19 +167,19 @@ Pour installer un paquet Typst, il vous suffit simplement de l'importer dans vot
 ```
 ]
 
-Prenons l'exemple du paquet `cnam-thesis` qui est utilisé dans ce guide. Pour l'importer, vous pouvez utiliser la syntaxe suivante :
+Prenons l'exemple du paquet `community-cnam-thesis` qui est utilisé dans ce guide. Pour l'importer, vous pouvez utiliser la syntaxe suivante :
 #code-box[
 ```typst
 // Importe toutes les fonctions et variables du paquet
-#import "@preview/cnam-thesis:0.1.0": *
+#import "@preview/community-cnam-thesis:0.1.0": *
 
 // Importe le nom du paquet pour l'utiliser dans votre code
 // Par exemple, #ct.info-box[...] crée une boîte d'information
-#import "@preview/cnam-thesis:0.1.0": ct
+#import "@preview/community-cnam-thesis:0.1.0": ct
 
 // Importe uniquement les fonctions `info-box` et `warning-box` du paquet
 // Les autres fonctions et variables du paquet seront inaccessibles
-#import "@preview/cnam-thesis:0.1.0": info-box, warning-box
+#import "@preview/community-cnam-thesis:0.1.0": info-box, warning-box
 ```
 ]
 

@@ -1,9 +1,9 @@
-#import "@preview/cnam-thesis:0.1.0": *
+#import "@preview/community-cnam-thesis:0.1.0": *
 #import "../../guide-utils.typ": *
 
 = References <ch:ref>
 
-This chapter presents the bibliographic citation system used in the Cnam thesis template. It is based on the IEEEtran citation style, adapted for French. The style file used is `IEEEtran-francais.csl`, which is included in the `cnam-thesis` template. The glossary and acronym system is also presented.
+This chapter presents the bibliographic citation system used in the Cnam thesis template. It is based on the IEEEtran citation style, adapted for French. The style file used is `IEEEtran-francais.csl`, which is included in the `community-cnam-thesis` template. The glossary and acronym system is also presented.
 
 #minitoc
 
@@ -60,7 +60,7 @@ Typst is a new markup language developed by two German students, Laurenz Mädje 
 
 == Glossary, acronyms, and nomenclatures
 
-Several Typst packages exist to create glossaries and acronyms. The `cnam-thesis` template does not include specific packages for creating glossaries and acronyms. However, you can use the following packages:
+Several Typst packages exist to create glossaries and acronyms. The `community-cnam-thesis` template does not include specific packages for creating glossaries and acronyms. However, you can use the following packages:
 
 - *Glossaries*
 

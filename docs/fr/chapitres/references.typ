@@ -1,9 +1,9 @@
-#import "@preview/cnam-thesis:0.1.0": *
+#import "@preview/community-cnam-thesis:0.1.0": *
 #import "../../guide-utils.typ": *
 
 = Références <ch:ref>
 
-Ce chapitre présente le système de citations bibliographiques utilisé dans le template de thèse du Cnam. Il est basé sur le style de citation IEEEtran, adapté pour le français. Le fichier de style utilisé est `IEEEtran-francais.csl`, qui est inclus dans le gabarit `cnam-thesis`. Le système de glossaire et d'acronyme est également présenté.
+Ce chapitre présente le système de citations bibliographiques utilisé dans le template de thèse du Cnam. Il est basé sur le style de citation IEEEtran, adapté pour le français. Le fichier de style utilisé est `IEEEtran-francais.csl`, qui est inclus dans le gabarit `community-cnam-thesis`. Le système de glossaire et d'acronyme est également présenté.
 
 #minitoc
 
@@ -59,7 +59,7 @@ Typst est un nouveau langage de balise développé par deux étudiants allemands
 
 == Glossaire, acronymes et nomenclatures
 
-Plusieurs paquets Typst pour créer des glossaires et des acronymes existent. Le gabarit `cnam-thesis` n'intègre pas de paquets spécifiques pour créer des glossaires et des acronymes. Toutefois, il est possible d'utiliser les paquets suivants :
+Plusieurs paquets Typst pour créer des glossaires et des acronymes existent. Le gabarit `community-cnam-thesis` n'intègre pas de paquets spécifiques pour créer des glossaires et des acronymes. Toutefois, il est possible d'utiliser les paquets suivants :
 
 - *Glossaires*
 

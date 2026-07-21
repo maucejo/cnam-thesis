@@ -1,4 +1,4 @@
-#import "@preview/cnam-thesis:0.1.0": *
+#import "@preview/community-cnam-thesis:0.1.0": *
 
 #let default-type-color = rgb("#eff0f3")
 #let function-name-color = rgb("#4b69c6")

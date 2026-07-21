@@ -1,4 +1,4 @@
-#import "@preview/cnam-thesis:0.1.0": *
+#import "@preview/community-cnam-thesis:0.1.0": *
 #import "../../guide-utils.typ": *
 
 = Boîtes informationnelles <ch:boxes>
@@ -11,7 +11,7 @@ Les boîtes informationnelles sont des éléments de mise en forme qui permetten
 
 == Boîtes disponibles
 
-Le template `cnam-thesis` propose plusieurs types de boîtes informationnelles, chacune ayant un style et une fonction spécifique. Voici les principales boîtes disponibles :
+Le template `community-cnam-thesis` propose plusieurs types de boîtes informationnelles, chacune ayant un style et une fonction spécifique. Voici les principales boîtes disponibles :
 
 - #cmd-("info-box") : Utilisée pour fournir des informations générales ou des conseils utiles.
 
@@ -164,6 +164,6 @@ On peut rajouter la numérotation des lignes de code en utilisant des paquets d�
   ```
 ]]
 
-#info-box[Le paquet `zebraw` est une dépendance explicite du template `cnam-thesis`. Il peut donc être utilisé directement sans l'importer de manière explicite.]
+#info-box[Le paquet `zebraw` est une dépendance explicite du template `community-cnam-thesis`. Il peut donc être utilisé directement sans l'importer de manière explicite.]
 
-Pour aller plus loin, vous pouvez consulter la documentation de #link("https://github.com/hongjr03/typst-zebraw", [`zebraw`]). On peut noter que d'autre paquets existent pour la mise en forme de code, comme #link("https://github.com/Dherse/codly", [`codly`]) ou #link("https://github.com/jneug/typst-codelst", [`codelst`]). En revanche, ces paquets ne sont pas des dépendances du template `cnam-thesis` et doivent donc être importés explicitement si vous souhaitez les utiliser.
+Pour aller plus loin, vous pouvez consulter la documentation de #link("https://github.com/hongjr03/typst-zebraw", [`zebraw`]). On peut noter que d'autre paquets existent pour la mise en forme de code, comme #link("https://github.com/Dherse/codly", [`codly`]) ou #link("https://github.com/jneug/typst-codelst", [`codelst`]). En revanche, ces paquets ne sont pas des dépendances du template `community-cnam-thesis` et doivent donc être importés explicitement si vous souhaitez les utiliser.

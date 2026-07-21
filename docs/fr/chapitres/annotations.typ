@@ -1,9 +1,9 @@
-#import "@preview/cnam-thesis:0.1.0": *
+#import "@preview/community-cnam-thesis:0.1.0": *
 #import "../../guide-utils.typ": *
 
 = Commentaires de relecture <ch:review>
 
-Cette section présente les différentes fonctionnalités de relecture et d'annotation disponibles dans le template `cnam-thesis`. Ces fonctionnalités permettent aux auteurs et aux relecteurs de collaborer efficacement en ajoutant des commentaires, des notes de marge et des annotations directement dans le document.
+Cette section présente les différentes fonctionnalités de relecture et d'annotation disponibles dans le template `community-cnam-thesis`. Ces fonctionnalités permettent aux auteurs et aux relecteurs de collaborer efficacement en ajoutant des commentaires, des notes de marge et des annotations directement dans le document.
 
 #minitoc
 
@@ -33,7 +33,7 @@ L'activation des commentaires créée une zone de marge sur le côté droit du d
 
 == Types de commentaires <ch:review->
 
-Le gabarit `cnam-thesis` propose différents types de commentaires, chacun ayant une icône spécifique pour les différencier visuellement :
+Le gabarit `community-cnam-thesis` propose différents types de commentaires, chacun ayant une icône spécifique pour les différencier visuellement :
 
 - *`note`* #box(image("../../../src/resources/logo/note.svg", width: 1em) + v(-1pt)) : Utilisé pour ajouter des notes d'information ou des explications supplémentaires.
 
@@ -114,7 +114,7 @@ Dans la section suivante, #ma-highlight-comment(type: "question", dy: - 3.5em)[n
 
 == Table des annotations
 
-Pour faciliter la lecture et la navigation dans les commentaires, le template `cnam-thesis` propose également une table des annotations. Cette table répertorie tous les commentaires ajoutés dans le document, avec leur numéro, leur auteur et leur type. Pour l'insérer dans le document, il suffit d'utiliser la commande #cmd-("listofnotes") à l'endroit souhaité.
+Pour faciliter la lecture et la navigation dans les commentaires, le template `community-cnam-thesis` propose également une table des annotations. Cette table répertorie tous les commentaires ajoutés dans le document, avec leur numéro, leur auteur et leur type. Pour l'insérer dans le document, il suffit d'utiliser la commande #cmd-("listofnotes") à l'endroit souhaité.
 
 #code-box[
 ```typ

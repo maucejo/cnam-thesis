@@ -1,11 +1,11 @@
-#import "@preview/cnam-thesis:0.1.0": *
+#import "@preview/community-cnam-thesis:0.1.0": *
 #import "@preview/mantys:1.0.2": *
 #import "@preview/dtree:0.1.1": dtree
 #import "../../guide-utils.typ": *
 
 = General Usage <ch:usage-general>
 
-This chapter presents the general instructions for using the `cnam-thesis` template. It is recommended to follow these instructions before starting to write your manuscript.
+This chapter presents the general instructions for using the `community-cnam-thesis` template. It is recommended to follow these instructions before starting to write your manuscript.
 
 #minitoc
 
@@ -13,13 +13,13 @@ This chapter presents the general instructions for using the `cnam-thesis` templ
 
 == General information
 
-The `cnam-thesis` template is based on `bookly`, a Typst package developed by the author of this document. It provides a consistent document structure, predefined layout styles, and features specific to academic documents.
+The `community-cnam-thesis` template is based on `bookly`, a Typst package developed by the author of this document. It provides a consistent document structure, predefined layout styles, and features specific to academic documents.
 
 This template customizes the `bookly` template to meet the specific requirements of theses from the Conservatoire national des arts et métiers (Cnam). It also includes additional features that are described in the following chapters.
 
 === Fonts
 
-To use the `cnam-thesis` template, you must install the following fonts on your system:
+To use the `community-cnam-thesis` template, you must install the following fonts on your system:
 
 - Text: `TeXGyrePagellaX` (#link("https://www.ctan.org/tex-archive/fonts/newpx/", "download link")), `Libertinus Serif` (#link("https://ctan.org/pkg/libertinus-fonts?lang=en", "download link")) and `New Computer Modern` (included with Typst).
 
@@ -29,7 +29,7 @@ To use the `cnam-thesis` template, you must install the following fonts on your 
 
 === Theme colors
 
-The `cnam-thesis` template defines two main colors to ensure visual consistency throughout the document:
+The `community-cnam-thesis` template defines two main colors to ensure visual consistency throughout the document:
 
 - Primary color: #box(width: 1em, height: 1em, fill: cnam-colors.primary)
 - Secondary color: #box(width: 1em, height: 1em, fill: cnam-colors.secondary)
@@ -41,15 +41,15 @@ The `cnam-thesis` template defines two main colors to ensure visual consistency 
 To use the template, you must import it into your main `typ` file. Assuming the template and the main file are in the same folder, simply insert the following command on the first line of the main file.
 
 #code-box[```typ
-#import "@preview/cnam-thesis:0.1.0": *
+#import "@preview/community-cnam-thesis:0.1.0": *
 ```]
 
 #info-box[If you split your document into multiple files, you must insert the previous command in the preamble of each file.]
 
-After importing the template, it must be initialized by applying a display rule (`show` rule) with the #cmd("cnam-thesis") command and passing the required options with the `with` instruction in your main `typ` file:
+After importing the template, it must be initialized by applying a display rule (`show` rule) with the #cmd("community-cnam-thesis") command and passing the required options with the `with` instruction in your main `typ` file:
 
 #code-box[```typ
-#show: cnam-thesis.with(
+#show: community-cnam-thesis.with(
     title: "thesis title",
     author: "Author name",
     lang: "fr",
@@ -67,7 +67,7 @@ This initialization function contains a number of arguments detailed below. You 
 #argument("lang", default: ["fr"], type: mtype("string"))[
   Document language.
 
-  #text(size: 0.85em, info-box[All languages supported by `bookly` are also supported by the `cnam-thesis` template.])
+  #text(size: 0.85em, info-box[All languages supported by `bookly` are also supported by the `community-cnam-thesis` template.])
 ]
 #argument("open-right", default: [true], type: mtype("bool"))[
   If `true`, chapters start on a right-hand page. If `false`, chapters start on the next page.
@@ -132,7 +132,7 @@ To define the `supervisor`, `co-supervisor`, and `committee` dictionaries, sever
   (name: "Henri Tresca", title: "Professeur titulaire de la Chaire de Mécanique", institution: "Cnam, Paris"),
 )
 
-#show: cnam-thesis.with(
+#show: community-cnam-thesis.with(
     thesis-info: (
         supervisor: supervisor,
     ),
@@ -163,7 +163,7 @@ To define the `supervisor`, `co-supervisor`, and `committee` dictionaries, sever
 #v(1em)
 ```typ
 // main.typ
-#show: cnam-thesis.with(
+#show: community-cnam-thesis.with(
     thesis-info: json("/path/to/thesis-info.json"),
 )
 ```
@@ -185,7 +185,7 @@ supervisor:
 #v(1em)
 ```typ
 // main.typ
-#show: cnam-thesis.with(
+#show: community-cnam-thesis.with(
     thesis-info: yaml("/path/to/thesis-info.yaml"),
 )
 ```
@@ -222,13 +222,13 @@ Based on the structure defined in the previous section, the main `main.typ` file
 #code-box[
 ```typ
 // main.typ
-#import "@preview/cnam-thesis:0.1.0": *
+#import "@preview/community-cnam-thesis:0.1.0": *
 
 #let supervisor = ...
 #let co-supervisor = ...
 #let committee = ...
 
-#show: cnam-thesis.with(
+#show: community-cnam-thesis.with(
     title: [User guide for the Typst thesis template for Cnam theses],
     author: "Mathieu Aucejo",
     thesis-info: (

@@ -1,10 +1,10 @@
-#import "@preview/cnam-thesis:0.1.0": *
+#import "@preview/community-cnam-thesis:0.1.0": *
 
 #show: chapter-nonum
 
 = Conclusion
 
-This user guide for the `cnam-thesis` Typst template was written to help students and researchers prepare theses that comply with Cnam requirements. It provides practical instructions for configuration, structure, bibliography management, and advanced features such as annotations.
+This user guide for the `community-cnam-thesis` Typst template was written to help students and researchers prepare theses that comply with Cnam requirements. It provides practical instructions for configuration, structure, bibliography management, and advanced features such as annotations.
 
 == Feature summary
 
@@ -15,8 +15,8 @@ This user guide for the `cnam-thesis` Typst template was written to help student
   table.hline(),
   [Feature], [Syntax], [Chapter],
   table.hline(),
-  [Template import], [`#import "@preview/cnam-thesis:0.1.0": *`], table.cell(rowspan: 2)[Chapter @ch:usage-general],
-  [Template initialization], [`#show: cnam-thesis.with(...)`],
+  [Template import], [`#import "@preview/community-cnam-thesis:0.1.0": *`], table.cell(rowspan: 2)[Chapter @ch:usage-general],
+  [Template initialization], [`#show: community-cnam-thesis.with(...)`],
   table.hline(),
   [Heading hierarchy], [`= Chapter`, `== Section`, `=== Subsection`], table.cell(rowspan: 7)[Chapter @ch:structure],
   [Unnumbered chapters], [`#show: chapter-nonum`],

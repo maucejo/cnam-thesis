@@ -1,13 +1,13 @@
-# cnam-thesis
+# community-cnam-thesis
 
 [![Generic badge](https://img.shields.io/badge/Version-0.1.0-cornflowerblue.svg)](https://github.com/maucejo/bookly/releases/tag/0.1.0)
 [![MIT License](https://img.shields.io/badge/License-MIT-forestgreen)](https://github.com/maucejo/book_template/blob/main/LICENSE)
-[![User Manual](https://img.shields.io/badge/Manual-.pdf-mediumpurple)](https://github.com/maucejo/cnam-thesis/blob/main/docs/en/guide-en.pdf)
-[![User Manual (FR)](https://img.shields.io/badge/Manual%20(FR)-.pdf-mediumpurple)](https://github.com/maucejo/cnam-thesis/blob/main/docs/fr/guide-fr.pdf)
+[![User Manual](https://img.shields.io/badge/Manual-.pdf-mediumpurple)](https://github.com/maucejo/community-cnam-thesis/blob/main/docs/en/guide-en.pdf)
+[![User Manual (FR)](https://img.shields.io/badge/Manual%20(FR)-.pdf-mediumpurple)](https://github.com/maucejo/community-cnam-thesis/blob/main/docs/fr/guide-fr.pdf)
 
-A Typst package to write Cnam PhD theses with a ready-to-use structure, title page, front/back matter helpers, and thesis-oriented styling. For more detailed information, see the [manual](https://github.com/maucejo/cnam-thesis/blob/main/docs/en/guide-en.pdf).
+A Typst package to write Cnam PhD theses with a ready-to-use structure, title page, front/back matter helpers, and thesis-oriented styling. For more detailed information, see the [manual](https://github.com/maucejo/community-cnam-thesis/blob/main/docs/en/guide-en.pdf).
 
-`cnam-thesis` provides:
+`community-cnam-thesis` provides:
 
 - A preconfigured thesis layout built on top of [`bookly`](https://typst.app/universe/package/bookly/).
 - A Cnam-styled title page.
@@ -20,7 +20,7 @@ A Typst package to write Cnam PhD theses with a ready-to-use structure, title pa
 Import from Typst Universe:
 
 ```typst
-#import "@preview/cnam-thesis:0.1.0": *
+#import "@preview/community-cnam-thesis:0.1.0": *
 ```
 
 ## Quick start
@@ -28,9 +28,9 @@ Import from Typst Universe:
 Minimal thesis document:
 
 ```typst
-#import "@preview/cnam-thesis:0.1.0": *
+#import "@preview/community-cnam-thesis:0.1.0": *
 
-#show: cnam-thesis.with(
+#show: community-cnam-thesis.with(
 	title: "My Thesis Title",
 	author: "Jane Doe",
 	thesis-info: (
@@ -83,7 +83,7 @@ You can also load data from JSON/YAML and spread it into `thesis-info`.
 
 ### Core entrypoint
 
-- `cnam-thesis(...)`
+- `community-cnam-thesis(...)`
 	- Main setup wrapper for the whole document.
 	- Applies fonts, theme, colors, title page, bibliography style, and document options.
 	- Parameters:

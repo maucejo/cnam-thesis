@@ -1,4 +1,4 @@
-#import "@preview/cnam-thesis:0.1.0": *
+#import "@preview/community-cnam-thesis:0.1.0": *
 #import "../../guide-utils.typ": *
 
 = Callout boxes <ch:boxes>
@@ -11,7 +11,7 @@ Callout boxes are formatting elements used to highlight specific information in 
 
 == Available boxes
 
-The `cnam-thesis` template provides several types of informational boxes, each with a specific style and purpose. Here are the main available boxes:
+The `community-cnam-thesis` template provides several types of informational boxes, each with a specific style and purpose. Here are the main available boxes:
 
 - #cmd-("info-box"): Used to provide general information or useful advice.
 
@@ -166,6 +166,6 @@ You can add line numbering by using dedicated packages, such as `zebraw`:
 ]]
 
 #pagebreak()
-#info-box[The `zebraw` package is an explicit dependency of the `cnam-thesis` template. It can therefore be used directly without importing it explicitly.]
+#info-box[The `zebraw` package is an explicit dependency of the `community-cnam-thesis` template. It can therefore be used directly without importing it explicitly.]
 
-To go further, you can consult the documentation for #link("https://github.com/hongjr03/typst-zebraw", [`zebraw`]). Note that other packages exist for code formatting, such as #link("https://github.com/Dherse/codly", [`codly`]) or #link("https://github.com/jneug/typst-codelst", [`codelst`]). However, these packages are not dependencies of the `cnam-thesis` template and must therefore be explicitly imported if you want to use them.
+To go further, you can consult the documentation for #link("https://github.com/hongjr03/typst-zebraw", [`zebraw`]). Note that other packages exist for code formatting, such as #link("https://github.com/Dherse/codly", [`codly`]) or #link("https://github.com/jneug/typst-codelst", [`codelst`]). However, these packages are not dependencies of the `community-cnam-thesis` template and must therefore be explicitly imported if you want to use them.
