@@ -182,6 +182,7 @@ Since Typst is a Turing-complete language, it is possible to create plots direct
 
 The example below shows how to create a figure with two plots representing the free response of a one-degree-of-freedom mechanical system in the undamped and underdamped cases. For more information about the `lilaq` package, see the #link("https://lilaq.org/", "lilaq documentation").
 
+#v(1em)
 #example-box(ncol: 1, numbering: false, row-gutter: 11em)[
 ```typ
 #import "@preview/lilaq:0.6.0" as lq

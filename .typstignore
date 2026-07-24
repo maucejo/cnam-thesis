@@ -9,6 +9,7 @@
 
 .github
 .gitignore
+.edist
 scripts
 justfile
 docs

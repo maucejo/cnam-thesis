@@ -1,5 +1,4 @@
 #import "@preview/community-cnam-thesis:0.1.0": *
-#import "@preview/mantys:1.0.2": *
 #import "@preview/dtree:0.1.1": dtree
 #import "../../guide-utils.typ": *
 
@@ -199,7 +198,7 @@ Lorsque l'on rédige un document long, comme peut l'être un manuscrit de thèse
 
 #dtree(
   stroke: 0.75pt + cnam-colors.primary,
-  icons: ("typ": typst),
+  icons: ("typ": box(height: 0.7em, codly-languages.typ.icon, fill: cnam-colors.primary)),
   icon-rules: (
     ("main.typ", (icon: "typ", fill: cnam-colors.primary)),
     ("*.typ", (icon: "typ")),

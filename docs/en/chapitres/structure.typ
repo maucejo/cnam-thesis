@@ -107,24 +107,25 @@ There are several types of lists in Typst: bulleted lists, numbered lists, and t
   columns: (1fr, 1fr),
   column-gutter: 1em,
   [
-  #set align(horizon)
-  #zebraw(lang-color:teal, numbering: false,
-```typst
-- First item
-- Second item
-  - Subitem 1 (1 tab)
+    #set align(horizon)
+    #zebraw(lang-color:typst-color.lighten(25%), numbering: false,
+    ```typst
+    - First item
+    - Second item
+      - Subitem 1 (1 tab)
 
-+ First item
-+ Second item
-  + First item
+    + First item
+    + Second item
+      + First item
 
-#sym.dots.v
-5. Fifth item
-+ Sixth item
+    #sym.dots.v
+    5. Fifth item
+    + Sixth item
 
-- [x] Task 1
-- [ ] Task 2
-```)],
+    - [x] Task 1
+    - [ ] Task 2
+    ```)
+],
 [#render-box[
   - First item
   - Second item
