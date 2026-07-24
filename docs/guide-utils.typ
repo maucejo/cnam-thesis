@@ -74,9 +74,6 @@
 
 #let cmd-(body) = [#text(size: 0.9em, fill: function-name-color, font: cnam-fonts.raw)[\#*#body*]]
 
-
-// #let lang-title = box(height: 0.7em, codly-languages.typ.icon + h(0.5em) + text(fill: white, codly-languages.typ.name))
-
 #let example-box(left, right, ncol: 2, lang: true, numbering: true, lang-color: teal, vspace: 0em, ..args) = grid(
   columns: (1fr,)*ncol,
   column-gutter: 1em,
