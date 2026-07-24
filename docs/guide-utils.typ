@@ -46,6 +46,8 @@
 
 #let typst-color = rgb(35, 157, 173)
 
+#let lang-title = box(height: 0.7em, codly-languages.typ.icon + h(0.5em) + text(fill: white, codly-languages.typ.name))
+
 #let render-box = showybox.with(
   title: align(center)[
     #let title = context if cnam-states.lang.get() == "fr" {

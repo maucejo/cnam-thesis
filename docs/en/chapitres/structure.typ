@@ -77,8 +77,8 @@ This section presents various text formatting elements.
 
 === Emphasis and Code
 
-#example(lang: [typst], numbering: false, vspace: -0.5em,
-```
+#example(numbering: false, vspace: -0.5em,
+```typ
 *bold*, _italic_, _*bold and italic*_, `inline code`, #strike[strikethrough], #super[superscript], #sub[subscript]
 ```
 )
@@ -108,7 +108,7 @@ There are several types of lists in Typst: bulleted lists, numbered lists, and t
   column-gutter: 1em,
   [
     #set align(horizon)
-    #zebraw(lang-color:typst-color.lighten(25%), numbering: false,
+    #zebraw(lang: lang-title, lang-color:codly-languages.typ.color.lighten(25%), numbering: false,
     ```typst
     - First item
     - Second item

@@ -76,8 +76,8 @@ Cette section présente différents éléments de mise en forme du texte.
 
 === Emphase et code
 
-#example(lang: [typst], numbering: false, vspace: -0.5em,
-```
+#example(numbering: false, vspace: -0.5em,
+```typ
 *gras*, _italique_, _*gras et italique*_, `code inline`, #strike[barré], #super[exposant], #sub[indice]
 ```
 )
@@ -106,23 +106,23 @@ Il existe plusieurs types de listes dans Typst: les listes à puces, les listes 
   column-gutter: 1em,
   [
   #set align(horizon)
-  #zebraw(lang-color:teal, numbering: false,
-```typst
-- Premier élément
-- Deuxième élément
-  - Sous-élément 1 (1 tabulation)
+  #zebraw(lang: lang-title, lang-color:codly-languages.typ.color.lighten(25%), numbering: false,
+  ```typst
+  - Premier élément
+  - Deuxième élément
+    - Sous-élément 1 (1 tabulation)
 
-+ Premier élément
-+ Deuxième élément
   + Premier élément
+  + Deuxième élément
+    + Premier élément
 
-#sym.dots.v
-5. Cinquième élément
-+ Sixième élément
+  #sym.dots.v
+  5. Cinquième élément
+  + Sixième élément
 
-- [x] Tâche 1
-- [ ] Tâche 2
-```)],
+  - [x] Tâche 1
+  - [ ] Tâche 2
+  ```)],
 [#render-box[
   - Premier élément
   - Deuxième élément
